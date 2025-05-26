@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.navbar a.active {
+    font-size: 20px; 
+    color:  rgb(234, 228, 213);  
+}
+
+.containerOne{
+  background-color: rgb(234, 228, 213);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.tituloHabilidadesTecnicas{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  color:black ;
+}
+
+
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-track img {
+  width: 180px;
+  height: 190px;
+  object-fit: cover;
+  margin: 0 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-track img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  z-index: 1;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.containerTwo{
+background-color: black;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  
+}
+.tituloIdioma{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  color:rgb(234, 228, 213) ;
+}
+
+.container {
+  display: flex;
+  gap: 100px;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card:hover .inner {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  color: black ;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  background-color: rgb(234, 228, 213);
+}
+
+
+.back {
+  background-color: rgb(234, 228, 213);
+  transform: rotateY(180deg);
+}
+
+.containerThree{
+  background-color: rgb(234, 228, 213);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.containerPotencialidades {
+      width: 90%;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+   .containerThree h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #222;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      gap: 20px;
+    }
+
+    .skill {
+      flex: 1 1 200px;
+      max-width: 250px;
+      background: white;
+      border-radius: 16px;
+      padding: 30px 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-top: 4px solid transparent;
+    }
+
+    .skill:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .skill-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .skill:nth-child(1) { border-top-color: black; }
+    .skill:nth-child(2) { border-top-color: black; }
+    .skill:nth-child(3) { border-top-color: black; }
+    .skill:nth-child(4) { border-top-color: black; }
+
+    @media (max-width: 768px) {
+      .skills {
+        flex-direction: column;
+        align-items: center;
+      }
+    }

@@ -4,93 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julia Holz</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/styleContato.css">
 </head>
 <body>
     <header>
-        <h1>Contato</h1>
         <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./contato.html">Contato</a></li>
-                <li><a href="./sobre.html">Sobre</a></li>
-            </ul>
+            <div class="topnav">
+                <div>
+                    <a href="./index.html"><img class="img_home" src="img/homeee.svg" ></a>
+                    
+                </div>
+                <div class="navbar">
+                    <a href="./sobre.html">About</a>
+                    <a href="./habilidades.html">Skills</a>
+                    <a  class="active" href="./contato.html">Contact</a>
+                </div>
+                <div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <article>
-            <form action="">
-               
-                <fieldset>
-                    <legend>Cadastro </legend>
-                <br>
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" placeholder="Digite o seu nome" required autocomplete="on">
-                <br>
-                <label for="Email">Email</label>
-                <input type="email" name="email" placeholder="Digite seu email" required>
-                <br>
-                <label for="dt_nasc">Data de nascimento:</label>
-                <input type="date" required>
-            </fieldset>
-                <br>
-              <fieldset>
-                <legend>Usuario</legend>
-                <br>
-                <label for="user">Usuário:</label>
-                <input type="text" name="user" placeholder="Digite um nome para usuário" required>
-                <br> <br>
-                <label for="senha">Senha:</label>
-                <input type="password" name="senha" placeholder="Digite uma senha" required>
-                <br> <br>
-                <label for="bairro">Bairro:</label>
-                <input type="text" name="bairro" size="30" placeholder="Digite seu bairro">
-                <br> <br>
-                <label for="rua">Rua:</label>
-                <input type="text" name="rua" size="30" placeholder="Digite sua rua">
-                <br> <br>
-                <label for="numero">Número:</label>
-                <input type="number" size="8" name="numero" placeholder="Digite o número" >
-                <br> <br>
-                <label for="cep">CEP:</label>
-                <input type="number" name="cep" size="8" placeholder="Digite seu CEP" required>
-                <br> <br>
-                <label for="cidade">Cidade:</label>
-                <select name="cidade" required>
-                    <option ></option>
-                    <option >Ibirubá</option>
-                    <option >Passo Fundo</option>
-                    <option >Marau</option>
-                    <option >Não me toque </option>
-                    <option >Espumoso</option>
-                </select>
-                <br> <br>
-                <label for="estado">Estado:</label>
-                <select name="estado" required>
-                    <option selected>Rio Grande do sul</option>
-                    <option >Paraná</option>
-                    <option disabled>Acre</option>
-                    <option >Santa Catarina </option>
-                    <option >Rio de Janeiro</option>
-                </select>
-            </fieldset>
-                <br><br>
-                <fieldset>
-                    <legend>Diversos</legend>
-                    <input type="color">
-                    <br><br>
-                    <p>Deseja receber propaganda?</p>
-                    <input type="radio" id="sim" name="propaganda">
-                    <label for="sim">Sim</label>
-                    <input type="radio" id="não" name="propaganda">
-                    <label for="não">Não</label>
 
-                </fieldset>
-                <br><br>
-                <input type="submit" value="Enviar">
+        <section class="textoContato">
+            <h1>Contato</h1>
+            <p>Entre em contato para mais informações</p>
+        </section>
 
-            </form>
-        </article>
+        <section class="containerHorizontal">
+            <div class="containerPai">
+                <div class="cardEsquerda">
+                    <h3>Celular</h3>
+                    <p>(54)991174656</p>
+                    <h3>E-mail</h3>
+                    <p>julia.holz06@gmail.com</p>
+                    <div class="appsHorizontal">
+                        <a target="_blank" href="https://www.instagram.com/julia_holz_?igsh=N2dzcmFnY2R2cjR5&utm_source=qr"><img class="imgInstagram" src="img/instagram.png" ></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/julia-holzz/"><img class="imgLinkedln" src="img/linkedln.png" ></a>
+                        <a target="_blank" href="https://github.com/juliaholz110"><img class="imgGithub" src="img/github.png" ></a>
+                    </div>
+                </div>
+            </div>
+<!-- Aqui começa o container pai da direita -->
+            <div class="containerPai">
+                <div class="formContainer">
+                    <form action="">
+                        <fieldset>
+                            <legend>Contato</legend>
+                                <div class="form-group" >
+                                    <label for="nome">Nome Completo:</label>
+                                    <input type="text" name="nome" placeholder="Digite o seu nome" required autocomplete="on">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Email">Email:</label>
+                                    <input type="email" name="email" placeholder="Digite seu email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Email">Telefone:</label>
+                                    <input type="number" name="number" placeholder="Digite seu número" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="user">Motivo do contato:</label>
+                                    <textarea name="mtvcontato" id="mtvcontato" required placeholder="Digite o motivo do contato"></textarea>
+                                </div>
+                        </fieldset>
+                        <button type="submit" class="form-button">Enviar</button>
+                    </form> 
+                </div>
+            </div>    
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footerContainer">
+            <p>&copy;2025 | Site desenvolvido por: Julia Holz</p> 
+        </div>
+    </footer>
 </body>
 </html>
